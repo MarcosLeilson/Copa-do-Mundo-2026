@@ -12,6 +12,7 @@ public class FaseGrupo {
         this.calcularScores();
     }
 
+    //TODO criar método para calcular a força do grupo usando algum desvio padrão e não apenas a soma das seleções.
     public void calcularScores() {
         Jogo jogo1 = new Jogo(selecoes.get(0), selecoes.get(1));
         jogos.add(jogo1);
