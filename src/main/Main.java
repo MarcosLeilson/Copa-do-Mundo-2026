@@ -107,9 +107,6 @@ public class Main {
         System.out.println("***SEQUENCIA DE JOGOS DA FASE DE GRUPO EM FORÇA***");
         System.out.println();
 
-
-        //jogos.sort(Comparator.comparingDouble(Jogo::getScore).reversed());
-
         List<Jogo> jogosOrdenados = Jogo.jogos;
 
         jogosOrdenados.sort(Comparator.comparingDouble(Jogo::getScore).reversed());
@@ -125,5 +122,18 @@ public class Main {
                     "; " + selecao2.getNome() + " = " + selecao2.getPontos() +
                     "; score = " + score);
         }
+
+        System.out.println();
+        System.out.println("---------------------------");
+        System.out.println();
+        System.out.println("***JOGO DA FASE DE GRUPO COM MAIOR E MENOR DIFERENÇA DE PONTOS***");
+        System.out.println();
+
+        System.out.println("Jogo com maior diferença de pontos:");
+        System.out.println(Jogo.jogoMaiorDiferenca);
+        System.out.println();
+        System.out.println("Jogo com menor diferença de pontos:");
+        System.out.println(Jogo.jogoMenorDiferenca);
+
     }
 }
